@@ -55,7 +55,7 @@ devise.provider('Auth', function AuthProvider() {
     function httpConfig(action, data, additionalConfig) {
         var config = {
             method: methods[action].toLowerCase(),
-            url: paths[action]
+            url: baseUrl+paths[action]
         };
 
         if (data) {
